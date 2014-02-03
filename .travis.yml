@@ -7,4 +7,11 @@ before_install:
    - "cd /usr/src/gtest && sudo cmake . && sudo cmake --build . && sudo mv libg* /usr/local/lib/ ; cd -"
    - cd ..
    - git clone https://github.com/mruby/mruby.git
-script: make test
+   - cd mruby
+   - ruby ./minirake
+   - pwd
+script:
+   - pwd
+   - make test
+rvm:
+   - 2.1.0

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 PROJECT(mrbind)
 
-SET(CMAKE_CXX_FLAGS "-std=c++11 -Wall -O0 -I/usr/include/ -I/usr/local/include/")
+SET(CMAKE_CXX_FLAGS "-std=c++11 -Wall -O0 -I/usr/include/ -I/usr/local/include/ -I../mruby/include")
 
 INCLUDE_DIRECTORIES(
   include/

@@ -9,9 +9,8 @@ before_install:
    - git clone https://github.com/mruby/mruby.git
    - cd mruby
    - ruby ./minirake
-   - pwd
+   - cd ../mrbind/
 script:
-   - pwd
    - make test
 rvm:
    - 2.1.0
